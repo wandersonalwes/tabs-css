@@ -1,7 +1,7 @@
 # Tabs CSS
 
   
-![presentation](https://github.com/wandersonalwes/form-css/blob/master/.github/presentation.gif)
+![presentation](https://github.com/wandersonalwes/tabs-css/blob/master/.github/presentation.gif)
 
 > Navegação através de guias, apenas com HTML e CSS.
 
