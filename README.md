@@ -16,6 +16,7 @@ Veja como é simples criar uma navegação em abas usando somente HTML e CSS.
 Primeiro é necessário criar alguns inputs com `type="radio"`.
 
 `<input id="login" type="radio" name="tabs" checked />`
+
 `<input id="register" type="radio" name="tabs" />`
 
 > Não esqueça de colocar o ID e deixar um dos inputs com o atributo checked.
@@ -24,6 +25,7 @@ Feito isso é necessário adicionar uma `label` pra cada input.
 
 
 `<label class="tab" id="login" for="login">Entrar</label>`
+
 `<label class="tab" id="register" for="register">Criar uma conta</label>`
 
 > O atributo "for" de cada label deve corresponder ao atributo "id" do input.
