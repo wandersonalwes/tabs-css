@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-size: 100%;
+}
+
+:root {
+  --color-background: #f0f0f7;
+  --color-white: #ffffff;
+  --color-primary: #8257e5;
+  --color-disabled: #dcdce5;
+  --color-text-complement: #9c98a6;
+  --color-line-in-white: #e6e6f0;
+  --color-text-base: #6a6180;
+  --color-title: #32264d;
+  --color-secondary: #04d361;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+
+  padding: 2rem;
+
+  background: var(--color-background);
+}
+
+.wrapper {
+  background: var(--color-white);
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 0.2rem;
+}
+
+.wrapper > input {
+  display: none;
+}
+
+.wrapper .tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.wrapper .tabs label {
+  flex: 1;
+  color: var(--color-text-complement);
+  background: var(--color-disabled);
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.wrapper .tabs label:hover {
+  filter: brightness(90%);
+}
+.wrapper .tabs label:first-child {
+  border-radius: 0.2rem 0rem 0rem 0rem;
+}
+.wrapper .tabs label:last-child {
+  border-radius: 0rem 0.2rem 0rem 0rem;
+}
+.wrapper .panels {
+  padding: 1rem 2rem;
+}
+.wrapper .panels .panel {
+  display: none;
+}
+
+#login:checked ~ .panels #login,
+#register:checked ~ .panels #register {
+  display: block;
+}
+
+#login:checked ~ .tabs #login,
+#register:checked ~ .tabs #register {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.wrapper .panels .panel form fieldset {
+  border: 0;
+}
+.wrapper .panels .panel form fieldset legend {
+  border-bottom: 1px solid var(--color-line-in-white);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.wrapper .panels .panel form fieldset legend h2 {
+  margin-bottom: 1rem;
+  color: var(--color-title);
+}
+
+.wrapper .panels .panel form fieldset .input-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.wrapper .panels .panel form fieldset .input-block label {
+  color: var(--color-text-complement);
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.wrapper .panels .panel form fieldset .input-block input {
+  height: 3rem;
+  padding: 0 1rem;
+  border: 1px solid var(--color-line-in-white);
+  outline: none;
+  border-radius: 0.2rem;
+  color: var(--color-text-base);
+}
+
+.wrapper .panels .panel form {
+  width: 100%;
+}
+.wrapper .panels .panel form button {
+  width: 100%;
+  padding: 1rem;
+  color: var(--color-white);
+  border: 0;
+  background: var(--color-secondary);
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.wrapper .panels .panel form button:hover {
+  filter: brightness(90%);
+}

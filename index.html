@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs CSS Only</title>
+
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+
+      <input id="login" type="radio" name="tabs" checked />
+      <input id="register" type="radio" name="tabs" />
+
+      <div class="tabs">
+        <label class="tab" id="login" for="login">Entrar</label>
+        <label class="tab" id="register" for="register">Criar uma conta</label>
+      </div>
+
+      <div class="panels">
+        <div class="panel" id="login">
+          <form>
+            <fieldset>
+              <legend>
+                <h2>Login</h2>
+              </legend>
+
+              <div class="input-block">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="wandersonalwes@hotmail.com" required autocomplete="off" />
+              </div>
+
+              <div class="input-block">
+                <label for="password">Senha</label>
+                <input id="password" type="password" placeholder="**********" required />
+              </div>
+
+            </fieldset>
+
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+        <div class="panel" id="register">
+          <form>
+            <fieldset>
+              <legend>
+                <h2>Criar uma conta</h2>
+              </legend>
+
+              <div class="input-block">
+                <label for="name">Nome completo</label>
+                <input id="name" type="text" placeholder="Wanderson Alves" required />
+              </div>
+
+              <div class="input-block">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="wandersonalwes@hotmail.com" required />
+              </div>
+
+              <div class="input-block">
+                <label for="password">Senha</label>
+                <input id="password" type="password" placeholder="**********" required />
+              </div>
+
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
